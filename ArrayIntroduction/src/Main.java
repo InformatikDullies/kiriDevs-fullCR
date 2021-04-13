@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Average time: " + averageTime);
     }
 
-    private static void testClass() {
+    private static SchoolClass testClass() {
         System.out.println("Testing class...\n");
         SchoolClass informatikDullies = new SchoolClass(3);
 
@@ -37,13 +37,34 @@ public class Main {
         if (!couldPrintList) {
             System.out.println("Couldn't print list: Not all names were filled yet!");
         }
+
+        // Return the used school class for futher usage with the testClassTest()
+        return informatikDullies;
+    }
+
+    private static void testClassTest(SchoolClass informatikDullies) {
+        System.out.println("Letting the informatikDullies class write a test...\n");
+        ClassTest computerScienceTest = new ClassTest(informatikDullies);
+
+        computerScienceTest.addValue(1);
+        computerScienceTest.addValue(2); // This is (obviously) just a two to test if detection of the largest value works properly
+        computerScienceTest.addValue(1);
+        // computerScienceTest.addValue(666); // Adding more values than allowed to test exceptions (666 because it's supposed to break things)
+
+        // int largestNumberValue = computerScienceTest.getLargestNumberValue();
+        // int largestNumberIndex = computerScienceTest.getLargestNumberIndex();
+        // System.out.println("The highest value in the test gradings is " + largestNumber + " at the index " + largestNumberIndex + "!");
+    }
+
+    private static void spacer() {
+        for (int i = 0; i < 3; i++) { System.out.println(); }
     }
 
     public static void main(String[] args) {
         testRun();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        testClass();
+        spacer();
+        SchoolClass informatikDullies = testClass();
+        spacer();
+        testClassTest(informatikDullies);
     }
 }
