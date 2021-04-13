@@ -9,9 +9,17 @@ public class Main {
         testRun.setTime(10.27, 5);
         testRun.setTime(10.32, 6);
 
-        boolean couldPrintTimes = testRun.printAllTimes();
-        if (!couldPrintTimes) {
-            System.out.println("Couldn't print times: Not all times were filled yet!");
+        boolean isOrdered = testRun.isOrdered();
+        System.out.println("Times are properly ordered: " + isOrdered);
+
+        if (isOrdered) {
+            boolean couldPrintTimes = testRun.printAllTimes();
+            if (!couldPrintTimes) {
+                System.out.println("Couldn't print times: Not all times were filled yet!");
+            }
         }
+
+        double averageTime = testRun.calculateAverageTime();
+        System.out.println("Average time: " + averageTime);
     }
 }
