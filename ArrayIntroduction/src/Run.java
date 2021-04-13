@@ -73,4 +73,21 @@ public class Run {
         return total / numberOfValues;
     }
 
+    public boolean isOrdered() {
+        // Idea: The times should be growing with every index
+        // (or be equal to the one before) since the time of place 2 has to be slower
+        // or equal (PF) to the time of place 1 and so on.
+        // Therefore, no time can be smaller than the time before
+
+        double lastTime = 0d;
+        for (double time: this.times) {
+            if (time < lastTime) {
+                // This time is lower than the one before -> not in order
+                return false;
+            }
+        }
+        // Nothing else triggered before, so it's in order:
+        return true;
+    }
+
 }
