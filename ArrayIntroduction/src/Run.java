@@ -16,4 +16,16 @@ public class Run {
     public Run(int numberOfRunners) {
         this.times = new double[numberOfRunners];
     }
+
+    /**
+     * Sets the time for a specific placement in the run.
+     *
+     * @param time      The time of the runner
+     * @param placement The placement of the runner (1-based)
+     */
+    public void setTime(double time, int placement) {
+        int index = placement - 1; // Placements are 1-based, indices are 0-based
+        this.times[index] = time;
+    }
+    
 }
