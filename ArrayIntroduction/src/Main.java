@@ -51,9 +51,11 @@ public class Main {
         computerScienceTest.addValue(1);
         // computerScienceTest.addValue(666); // Adding more values than allowed to test exceptions (666 because it's supposed to break things)
 
-        // int largestNumberValue = computerScienceTest.getLargestNumberValue();
-        // int largestNumberIndex = computerScienceTest.getLargestNumberIndex();
-        // System.out.println("The highest value in the test gradings is " + largestNumber + " at the index " + largestNumberIndex + "!");
+        int largestNumberValue = computerScienceTest.getLargestNumberValue();
+        int largestNumberIndex = computerScienceTest.getLargestNumberIndex();
+        System.out.println("The highest value in the test gradings is " + largestNumberValue + ".");
+        System.out.println("It's located at index " + largestNumberIndex + ",");
+        System.out.println("or the " + largestNumberIndex+1 + ". position!");
     }
 
     private static void spacer() {
