@@ -60,4 +60,17 @@ public class Run {
         return true;
     }
 
+    public double calculateAverageTime() {
+        double total = 0d;
+        int numberOfValues = this.times.length;
+
+        // Add all times up
+        for (double time : this.times) {
+            total += time;
+        }
+
+        // Divide by the amount of total values and return
+        return total / numberOfValues;
+    }
+
 }
