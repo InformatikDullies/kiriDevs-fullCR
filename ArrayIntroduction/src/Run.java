@@ -27,5 +27,26 @@ public class Run {
         int index = placement - 1; // Placements are 1-based, indices are 0-based
         this.times[index] = time;
     }
-    
+
+    /**
+     * Prints all times of all runners into the console.
+     * All times have to be filled first.
+     *
+     * @return true on success, false if not all times have been filled yet.
+     */
+    public boolean printAllTimes() {
+        // Checking if all times have been filled and don't allow printing before that
+        for (double time : this.times) {
+            if (time == 0d) { return false; }
+        }
+
+        // Printing the times for placements
+        int placement = 1;
+        for (double time : this.times) {
+            System.out.println(placement + ".: " + time);
+            placement++;
+        }
+        return true;
+    }
+
 }
