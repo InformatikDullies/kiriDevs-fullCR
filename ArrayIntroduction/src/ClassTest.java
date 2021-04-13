@@ -47,4 +47,28 @@ public class ClassTest {
         if (largestValue == null) { return 0; }
         else { return largestValue; }
     }
+
+    public int getLargestNumberIndex() {
+        Integer largestValue = null;
+        Integer largestIndex = null;
+        for (int i = 0; i < this.values.length; i++) {
+            int value = this.values[i];
+
+            // Make sure the first value is the the first largestValue
+            if (largestValue == null) {
+                largestValue = value;
+                largestIndex = i;
+                continue;
+            }
+
+            if (value > largestValue) {
+                largestValue = value;
+                largestIndex = i;
+            }
+        }
+
+        // Throw exception if no values were added - otherwise return index of largest number.
+        if (largestValue == null) { return -1; }
+        else { return largestIndex; }
+    }
 }
