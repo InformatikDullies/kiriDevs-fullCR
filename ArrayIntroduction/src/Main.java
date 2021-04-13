@@ -1,25 +1,30 @@
 public class Main {
-    public static void main(String[] args) {
-        Run testRun = new Run(6);
+    private static void testRun() {
+        System.out.println("Testing run...\n");
+        Run loburgerWaldlauf = new Run(6);
 
-        testRun.setTime(10.18, 1);
-        testRun.setTime(10.12, 2);
-        testRun.setTime(10.21, 3);
-        testRun.setTime(10.25, 4);
-        testRun.setTime(10.27, 5);
-        testRun.setTime(10.32, 6);
+        loburgerWaldlauf.setTime(10.18, 1);
+        loburgerWaldlauf.setTime(10.12, 2);
+        loburgerWaldlauf.setTime(10.21, 3);
+        loburgerWaldlauf.setTime(10.25, 4);
+        loburgerWaldlauf.setTime(10.27, 5);
+        loburgerWaldlauf.setTime(10.32, 6);
 
-        boolean isOrdered = testRun.isOrdered();
+        boolean isOrdered = loburgerWaldlauf.isOrdered();
         System.out.println("Times are properly ordered: " + isOrdered);
 
         if (isOrdered) {
-            boolean couldPrintTimes = testRun.printAllTimes();
+            boolean couldPrintTimes = loburgerWaldlauf.printAllTimes();
             if (!couldPrintTimes) {
                 System.out.println("Couldn't print times: Not all times were filled yet!");
             }
         }
 
-        double averageTime = testRun.calculateAverageTime();
+        double averageTime = loburgerWaldlauf.calculateAverageTime();
         System.out.println("Average time: " + averageTime);
+    }
+
+    public static void main(String[] args) {
+        testRun();
     }
 }
