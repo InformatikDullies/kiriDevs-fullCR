@@ -19,3 +19,4 @@ The largest part of kiriDevs' projects with copyright being fully managed by kir
   - Includes the tasks for the introduction into Arrays
     - 100m Running
     - School classes
+    - Class Tests
