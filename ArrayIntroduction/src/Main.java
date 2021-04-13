@@ -24,7 +24,26 @@ public class Main {
         System.out.println("Average time: " + averageTime);
     }
 
+    private static void testClass() {
+        System.out.println("Testing class...\n");
+        SchoolClass informatikDullies = new SchoolClass(3);
+
+        informatikDullies.addStudent("kiriDevs", 1);
+        informatikDullies.addStudent("Wadzek1", 2);
+        informatikDullies.addStudent("KulaJunke", 3);
+
+        System.out.println("Class \"InformatikDullies\":");
+        boolean couldPrintList = informatikDullies.printStudentList();
+        if (!couldPrintList) {
+            System.out.println("Couldn't print list: Not all names were filled yet!");
+        }
+    }
+
     public static void main(String[] args) {
         testRun();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        testClass();
     }
 }
