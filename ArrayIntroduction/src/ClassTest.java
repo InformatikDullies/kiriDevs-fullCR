@@ -28,4 +28,23 @@ public class ClassTest {
         this.values[this.indexToFill] = valueToSave; // Append to the end
         this.indexToFill++; // Increment "end index counter"
     }
+
+    public int getLargestNumberValue() {
+        Integer largestValue = null;
+        for (int value : this.values) {
+            // Make sure the first value is the the first largestValue
+            if (largestValue == null) {
+                largestValue = value;
+                continue;
+            }
+
+            if (value > largestValue) {
+                largestValue = value;
+            }
+        }
+
+        // Throw exception if no values were added - otherwise return largest one.
+        if (largestValue == null) { return 0; }
+        else { return largestValue; }
+    }
 }
