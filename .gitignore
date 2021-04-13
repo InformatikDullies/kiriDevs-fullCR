@@ -1,0 +1,26 @@
+# Default IntelliJ IDEA projects files
+*/.idea/
+*.iml
+
+# Default VSCode Java project files
+*/.project/
+*/.settings
+*/.classpath
+*/.factorypath
+*/launch.json
+
+# Ignoring unnecessary BlueJ created files
+*.ctxt
+*/package.bluej
+
+# Ignoring docs
+*/doc/
+*/docs/
+
+# Output files and folders (build paths)
+*.class
+*/out/
+*/target/
+
+# Task documents
+*.pdf
