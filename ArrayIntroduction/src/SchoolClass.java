@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class SchoolClass {
     @SuppressWarnings("FieldMayBeFinal")
     private String[] students;
