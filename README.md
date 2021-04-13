@@ -14,3 +14,8 @@ The largest part of kiriDevs' projects with copyright being fully managed by kir
 - Würfelspiele
   - Imported from kiriDevs/InformatikDullies on 13.04.2021
   - Includes several games you could also do with a normal, 6-sided dice IRL. But programmers don't like real life.
+- ArrayIntroduction
+  - Started on 13.04.2021
+  - Includes the tasks for the introduction into Arrays
+    - 100m Running
+    - School classes
