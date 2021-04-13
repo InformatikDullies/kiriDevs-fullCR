@@ -46,4 +46,13 @@ public class SchoolClass {
         }
         return true;
     }
+
+    /**
+     * Getter method for the amount of students in the class
+     *
+     * @return The number of students of the class
+     */
+    public int getNumberOfStudents() {
+        return this.students.length;
+    }
 }
