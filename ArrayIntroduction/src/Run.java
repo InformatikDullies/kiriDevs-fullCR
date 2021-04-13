@@ -60,6 +60,11 @@ public class Run {
         return true;
     }
 
+    /**
+     * Calculates and returns the average of all saved time values
+     *
+     * @return The average time of all the recorded values as double
+     */
     public double calculateAverageTime() {
         double total = 0d;
         int numberOfValues = this.times.length;
@@ -73,6 +78,11 @@ public class Run {
         return total / numberOfValues;
     }
 
+    /**
+     * Checks if the list is properly ordered and returns true or false accordingly
+     *
+     * @return true when the list is properly ordered, false otherwise
+     */
     public boolean isOrdered() {
         // Idea: The times should be growing with every index
         // (or be equal to the one before) since the time of place 2 has to be slower
