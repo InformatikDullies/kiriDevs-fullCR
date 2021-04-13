@@ -29,6 +29,17 @@ public class Run {
     }
 
     /**
+     * Gets the time for a specific placement
+     *
+     * @param placement The placement of the queried time (1-based)
+     * @return The queried time for the given placement
+     */
+    public double getTime(int placement) {
+        int index = placement - 1; // Placements are 1-based, indices are 0-base
+        return this.times[index];
+    }
+
+    /**
      * Prints all times of all runners into the console.
      * All times have to be filled first.
      *
