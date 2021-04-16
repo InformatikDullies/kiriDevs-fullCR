@@ -47,7 +47,7 @@ public class Main {
         ClassTest computerScienceTest = new ClassTest(informatikDullies);
 
         computerScienceTest.addValue(1);
-        computerScienceTest.addValue(2); // This is (obviously) just a two to test if detection of the largest value works properly
+        computerScienceTest.addValue(2);
         computerScienceTest.addValue(1);
         // computerScienceTest.addValue(666); // Adding more values than allowed to test exceptions (666 because it's supposed to break things)
 
