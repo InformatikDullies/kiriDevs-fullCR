@@ -7,6 +7,10 @@ public class ArrayTasks {
         this.a = new int[20];
     }
 
+    public int[] getValues() {
+        return this.a;
+    }
+
     public void fillAscending() {
         for (int i = 0; i < this.a.length; i++) {
             int value = i + 1;
