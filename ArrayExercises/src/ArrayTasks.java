@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class ArrayTasks {
     int[] a;
 
@@ -19,4 +21,24 @@ public class ArrayTasks {
         }
     }
 
+    public void fillRandom() {
+        Random randomGen = new Random();
+        for (int i = 0; i < this.a.length; i++) {
+            int generatedNumber = randomGen.nextInt(20);
+            int newValue = generatedNumber + 1;
+            this.a[i] = newValue;
+        }
+    }
+
+    public void invert() {
+        int[] invertedArray = new int[this.a.length];
+        int lastIndex = this.a.length - 1;
+        for (int i = 0; i < this.a.length; i++) {
+            int newIndex = lastIndex - i; // Calculate new position of the value
+
+            invertedArray[newIndex] = this.a[i]; // Place the value into it's new position
+        }
+
+        this.a = invertedArray; // Update a with the new order
+    }
 }
