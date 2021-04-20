@@ -38,4 +38,15 @@ public class ArrayCalculation {
 
         return totalAmount - evenNumbers;
     }
+
+    public int countPairs() {
+        int pairCount = 0;
+        for (int i = 0; i < this.a.length-1; i++) {
+            int num1 = this.a[i];
+            int num2 = this.a[i+1];
+
+            if (num1 == num2) { pairCount++; }
+        }
+        return pairCount;
+    }
 }
