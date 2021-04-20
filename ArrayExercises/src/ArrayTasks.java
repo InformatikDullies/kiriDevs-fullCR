@@ -12,4 +12,11 @@ public class ArrayTasks {
         }
     }
 
+    public void fillDescending() {
+        for (int i = 0; i < this.a.length; i++) {
+            int value = this.a.length - i;
+            this.a[i] = value;
+        }
+    }
+
 }
