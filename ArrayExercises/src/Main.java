@@ -29,6 +29,13 @@ public class Main {
         System.out.println(Arrays.toString(invertArrayTasks.getValues()));
         invertArrayTasks.invert();
         System.out.println(Arrays.toString(invertArrayTasks.getValues()));
+
+        // Testing minimum with random filling
+        System.out.println("ArrayTask#minimum() - on #fillRandom()");
+        ArrayTasks minimumArrayTasks = new ArrayTasks();
+        minimumArrayTasks.fillRandom();
+        System.out.println(Arrays.toString(minimumArrayTasks.getValues()));
+        System.out.println("Minimum: " + minimumArrayTasks.minimum());
     }
 
     public static void main(String[] args) {
