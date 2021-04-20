@@ -21,4 +21,21 @@ public class ArrayCalculation {
 
         return total;
     }
+
+    public int countEven() {
+        int evenAmount = 0;
+        for (int number : this.a) {
+            if (number % 2 == 0) {
+                evenAmount++;
+            }
+        }
+        return evenAmount;
+    }
+
+    public int countOdd() {
+        int totalAmount = this.a.length;
+        int evenNumbers = this.countEven();
+
+        return totalAmount - evenNumbers;
+    }
 }
