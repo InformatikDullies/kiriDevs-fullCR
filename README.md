@@ -20,3 +20,6 @@ The largest part of kiriDevs' projects with copyright being fully managed by kir
     - 100m Running
     - School classes
     - Class Tests
+- ArrayExercises
+  - Started on 20.04.2021
+  - Includes further exercises for Arrays, implementing various miscellaneuos methods.
