@@ -10,4 +10,15 @@ public class ArrayCalculation {
     public int[] getValues() {
         return this.a;
     }
+
+    public int sum() {
+        int total = 0;
+
+        // Iterate over all saved values
+        for (int value : this.a) {
+            total += value;
+        }
+
+        return total;
+    }
 }
