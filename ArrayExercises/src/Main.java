@@ -38,7 +38,31 @@ public class Main {
         System.out.println("Minimum: " + minimumArrayTasks.minimum());
     }
 
+    private static void testArrayCalculation() {
+        System.out.println("Now testing ArrayCalculation");
+
+        // Generating sample numbers
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        System.out.println(Arrays.toString(arrayCalculation.getValues()));
+
+        // Testing sum()
+        int sum = arrayCalculation.sum();
+        System.out.println("  Sum: " + sum);
+
+        // Testing even/odd number counting
+        int even = arrayCalculation.countEven();
+        int odd = arrayCalculation.countOdd();
+        System.out.println(" Even: " + even);
+        System.out.println("  Odd: " + odd);
+
+        // Testing pair detection
+        int pairs = arrayCalculation.countPairs();
+        System.out.println("Pairs: " + pairs);
+    }
+
     public static void main(String[] args) {
         testArrayTasks();
+        for (int i = 0; i < 3; i++) { System.out.println(); }
+        testArrayCalculation();
     }
 }
