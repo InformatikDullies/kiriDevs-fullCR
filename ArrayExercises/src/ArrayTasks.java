@@ -45,4 +45,16 @@ public class ArrayTasks {
 
         this.a = invertedArray; // Update a with the new order
     }
+
+    public int minimum() {
+        Integer min = null;
+
+        for (int value : this.a) {
+            if (min == null) { min = value; }
+            if (value < min) { min = value; }
+        }
+
+        if (min == null) { return 0; }
+        else { return min; }
+    }
 }
