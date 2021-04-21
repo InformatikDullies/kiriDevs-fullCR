@@ -17,7 +17,7 @@ public class CopyTest {
     }
 
     public void copyArray(int[] original) {
-        for (int i = 0; i < original.length(); i++) {
+        for (int i = 0; i < original.length; i++) {
             this.b[i] = original.b[i];
         }
     }
