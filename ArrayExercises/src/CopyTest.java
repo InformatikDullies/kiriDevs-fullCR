@@ -3,7 +3,7 @@ public class CopyTest {
     private int[] a, b;
 
     public CopyTest() {
-        this.arrayFiller = new ArrayTest();
+        this.arrayFiller = new ArrayTasks();
         arrayFiller.fillRandom(); 
         this.a = arrayFiller.getValues();
     }
