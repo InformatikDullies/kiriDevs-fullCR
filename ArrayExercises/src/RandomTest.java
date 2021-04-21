@@ -14,4 +14,12 @@ public class RandomTest {
 
         System.out.println(Arrays.toString(this.a));
     }
+
+    public int[] quantify() {
+        int[] quantities = new int[100];
+        for (int value : this.a) {
+            quantities[value]++;
+        }
+        return quantities;
+    }
 }
