@@ -11,8 +11,6 @@ public class RandomTest {
         for (int i = 0; i < 100000; i++) {
             this.a[i] = randomGen.nextInt(100);
         }
-
-        System.out.println(Arrays.toString(this.a));
     }
 
     public int[] quantify() {
