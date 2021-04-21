@@ -15,4 +15,10 @@ public class CopyTest {
         // Obviously doesn't work, but it's a task so...
         this.b = this.a;
     }
+
+    public void copyArray(int[] original) {
+        for (int i = 0; i < original.length(); i++) {
+            this.b[i] = original.b[i];
+        }
+    }
 }
