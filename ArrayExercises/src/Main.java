@@ -104,11 +104,32 @@ public class Main {
         System.out.println("B: " + Arrays.toString(b2));
     }
 
+    private static void testRandomTest() {
+        System.out.println("Now testing RandomTest");
+
+        // Create testing instance
+        RandomTest randomTest = new RandomTest();
+
+        // Getting values
+        int[] rawNumbers = randomTest.getNumbers();
+        int[] quantities = randomTest.quantify();
+
+        // Printing results
+        System.out.println("===== RAW NUMBERS =====");
+        System.out.println(Arrays.toString(rawNumbers));
+        System.out.println("===== END RAW NUMBERS =====");
+        System.out.println("===== QUANTITIES =====");
+        System.out.println(Arrays.toString(quantities));
+        System.out.println("===== END QUANTITIES =====");
+    }
+
     public static void main(String[] args) {
         testArrayTasks();
         for (int i = 0; i < 3; i++) { System.out.println(); }
         testArrayCalculation();
         for (int i = 0; i < 3; i++) { System.out.println(); }
         testCopyTest();
+        for (int i = 0; i < 3; i++) { System.out.println(); }
+        testRandomTest();
     }
 }
