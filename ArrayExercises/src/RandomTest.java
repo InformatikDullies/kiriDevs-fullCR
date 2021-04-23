@@ -13,6 +13,8 @@ public class RandomTest {
         }
     }
 
+    public int[] getNumbers() { return this.a; }
+
     public int[] quantify() {
         int[] quantities = new int[100];
         for (int value : this.a) {
