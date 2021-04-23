@@ -60,9 +60,55 @@ public class Main {
         System.out.println("Pairs: " + pairs);
     }
 
+    private static void testCopyTest() {
+        System.out.println("Now testing CopyTest");
+
+        // Create 1st CopyTest instance for testing
+        CopyTest copyTest1 = new CopyTest();
+        System.out.println("copyTest1.a:");
+        System.out.println(Arrays.toString(copyTest1.getA()));
+
+        // Doing the stupid thing with b = a
+        System.out.println("Doing the stupid thing with b = a, changing b[0] to 10.000");
+        copyTest1.copyTest();
+
+        // Extracting a and b from copyTest1
+        int[] a1 = copyTest1.getA();
+        int[] b1 = copyTest1.getB();
+
+        // Doing a change so you can see it happen in both instances
+        b1[0] = 10000;
+
+        // Printing out results
+        System.out.println("A: " + Arrays.toString(a1));
+        System.out.println("B: " + Arrays.toString(b1));
+
+        // Create 2nd CopyTest instance for testing and printing original numbers
+        CopyTest copyTest2 = new CopyTest();
+        System.out.println("copyTest2.a:");
+        System.out.println(Arrays.toString(copyTest2.getA()));
+
+        // Actually copying a into b:
+        System.out.println("Actually copying a into b, changing b[0] to 10.000");
+        copyTest2.copyArray(copyTest2.getA());
+
+        // Extracting a and b from copyTest2
+        int[] a2 = copyTest2.getA();
+        int[] b2 = copyTest2.getB();
+
+        // Doing a change so you can see it happen in only b here
+        b2[0] = 10000;
+
+        // Printing out results
+        System.out.println("A: " + Arrays.toString(a2));
+        System.out.println("B: " + Arrays.toString(b2));
+    }
+
     public static void main(String[] args) {
         testArrayTasks();
         for (int i = 0; i < 3; i++) { System.out.println(); }
         testArrayCalculation();
+        for (int i = 0; i < 3; i++) { System.out.println(); }
+        testCopyTest();
     }
 }
