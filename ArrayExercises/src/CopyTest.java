@@ -6,6 +6,8 @@ public class CopyTest {
         this.arrayFiller = new ArrayTasks();
         arrayFiller.fillRandom(); 
         this.a = arrayFiller.getValues();
+
+        this.b = new int[this.a.length];
     }
 
     public int[] getA() { return this.a; }
