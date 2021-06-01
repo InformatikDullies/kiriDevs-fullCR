@@ -128,6 +128,7 @@ public class Main {
             System.out.println(Arrays.toString(quantities));
             System.out.println("===== END QUANTITIES =====");
         }
+        System.out.println("Successfully ran RandomTest!");
     }
 
     public static void main(String[] args) {
