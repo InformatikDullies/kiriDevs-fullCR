@@ -114,10 +114,14 @@ public class Main {
         int[] rawNumbers = randomTest.getNumbers();
         int[] quantities = randomTest.quantify();
 
+        // Set to 'true' to see everything, to 'false' to not print 10K numbers to terminal
+        boolean doPrintRawNumbers = true;
         // Printing results
-        System.out.println("===== RAW NUMBERS =====");
-        System.out.println(Arrays.toString(rawNumbers));
-        System.out.println("===== END RAW NUMBERS =====");
+        if (doPrintRawNumbers) {
+            System.out.println("===== RAW NUMBERS =====");
+            System.out.println(Arrays.toString(rawNumbers));
+            System.out.println("===== END RAW NUMBERS =====");
+        }
         System.out.println("===== QUANTITIES =====");
         System.out.println(Arrays.toString(quantities));
         System.out.println("===== END QUANTITIES =====");
