@@ -116,15 +116,18 @@ public class Main {
 
         // Set to 'true' to see everything, to 'false' to not print 10K numbers to terminal
         boolean doPrintRawNumbers = true;
+        boolean doPrintQuantities = true;
         // Printing results
         if (doPrintRawNumbers) {
             System.out.println("===== RAW NUMBERS =====");
             System.out.println(Arrays.toString(rawNumbers));
             System.out.println("===== END RAW NUMBERS =====");
         }
-        System.out.println("===== QUANTITIES =====");
-        System.out.println(Arrays.toString(quantities));
-        System.out.println("===== END QUANTITIES =====");
+        if (doPrintQuantities) {
+            System.out.println("===== QUANTITIES =====");
+            System.out.println(Arrays.toString(quantities));
+            System.out.println("===== END QUANTITIES =====");
+        }
     }
 
     public static void main(String[] args) {
