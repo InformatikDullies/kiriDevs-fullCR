@@ -76,7 +76,7 @@ public class Main {
         int[] a1 = copyTest1.getA();
         int[] b1 = copyTest1.getB();
 
-        // Doing a change so you can see it happen in both instances
+        // Doing a change so you can see it happen in both "instances"
         b1[0] = 10000;
 
         // Printing out results
