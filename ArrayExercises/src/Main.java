@@ -36,6 +36,13 @@ public class Main {
         minimumArrayTasks.fillRandom();
         System.out.println(Arrays.toString(minimumArrayTasks.getValues()));
         System.out.println("Minimum: " + minimumArrayTasks.minimum());
+
+        // Testing contains with random filling
+        System.out.println("ArrayTasks#contains() - on #fillRandom()");
+        ArrayTasks containsArrayTasks = new ArrayTasks();
+        containsArrayTasks.fillRandom();
+        System.out.println(Arrays.toString(containsArrayTasks.getValues()));
+        System.out.println("Contains 10: " + containsArrayTasks.contains(10));
     }
 
     private static void testArrayCalculation() {
