@@ -57,4 +57,15 @@ public class ArrayTasks {
         if (min == null) { return 0; }
         else { return min; }
     }
+
+    public boolean contains(int numberToSearch) {
+        if ((numberToSearch < 1) || (numberToSearch > 20)) {
+            return false;
+        }
+
+        for (int value : this.a) {
+            if (value == numberToSearch) { return true; }
+        }
+        return false;
+    }
 }
