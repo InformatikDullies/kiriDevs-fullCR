@@ -63,9 +63,22 @@ public class ArrayTasks {
             return false;
         }
 
+        /*
         for (int value : this.a) {
             if (value == numberToSearch) { return true; }
         }
         return false;
+        */
+
+        boolean found = false;
+        int i = 0;
+        while (!found) {
+            int element = this.a[i];
+            if (element == numberToSearch) {
+                found = true;
+                }
+            i++;
+        }
+        return found;
     }
 }
