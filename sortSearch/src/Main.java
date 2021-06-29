@@ -18,8 +18,9 @@ public class Main {
         // Searching specified numbers and printing results
         int[] numbersToSearch = { -1, 1, 5, 10, 15, 20, 50 };
         for (int toSearch : numbersToSearch) {
-            Integer indexOfNumber = binarySearcher.searchFor(toSearch);
+            Integer indexOfNumber = binarySearcher.iterative(toSearch);
             Util.printSearchResult(toSearch, indexOfNumber);
+            System.out.println();
         }
     }
 

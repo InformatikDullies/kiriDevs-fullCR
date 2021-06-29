@@ -14,12 +14,12 @@ public class BinarySearch {
     }
 
     /**
-     * Searches for the given number in the search array.
+     * Searches for the given number in the search array iteratively.
      * Will not return the result, but save it to the object.
      * 
      * @param toFind The number to search for
      */
-    public Integer searchFor(int toFind) {
+    public Integer iterative(int toFind) {
         int[] a = this.searchArray; // Getting a pointer for easier access
 
         int lowerBound = 0;
@@ -54,5 +54,29 @@ public class BinarySearch {
 
         // Return null if the number wasn't found
         return null;
+    }
+
+    private Integer recursive(int lowerBound, int upperBound, int toFind, int runNumber) throws IllegalAccessException {
+        // Get easier access to the search array
+        int[] a = this.searchArray;
+
+        System.out.println(toFind + ": Starting " + runNumber + ". run");
+
+        throw new IllegalAccessException("Not implemented.");
+    }
+
+    /**
+     * Searches for the given number in the search array recursively .
+     * Will not return the result, but save it to the object.
+     * 
+     * @param toFind The number to search for
+     */
+    public Integer recursiveLauncher(int toFind) throws IllegalAccessException {
+        // Define starting bounds
+        int lowerBound = 0;
+        int upperBound = this.searchArray.length - 1;
+
+        // Actually run the recursive algorithm and pass the result through
+        return this.recursive(lowerBound, upperBound, toFind, 0);
     }
 }
