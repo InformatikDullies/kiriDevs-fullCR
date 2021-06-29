@@ -6,7 +6,15 @@ public class Sorter {
     }
 
     public void insertionSort() {
-        // Omitted
+        int i, j, temp;
+        for (i = 1; i < this.toSort.length; i++) {
+            j = i;
+            temp = this.toSort[j];
+            while ((j > 0) && (this.toSort[j-1] > temp)) {
+                this.toSort[j] = this.toSort[j - 1];
+                j--;
+            }
+        }
     }
 
     /* This getter is not required since we don't copy the array
